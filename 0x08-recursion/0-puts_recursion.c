@@ -2,13 +2,13 @@
 
 /**
  * _puts_recursion - prints a string, followed by a new line.
- * @s: string
- * Return: no return
+ * @s: inputs
+ * Return: Always 0 (Success)
  */
 
 void _puts_recursion(char *s)
 {
-	if (*s != '\0')
+	if (*s)
 	{
 		_putchar(*s);
 		_puts_recursion(s + 1);
